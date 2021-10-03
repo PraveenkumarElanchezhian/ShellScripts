@@ -19,8 +19,13 @@ case $random in
         full_time_working_hrs=8
         wage_hrs=20
         full_time=$(($wage_hrs*$full_time_working_hrs*$random))
-	echo "If emp working full time = $full_time wages";
-	;;
+        echo "If emp working full time = $full_time wages";
+
+        wage_hrs_per_day=20
+        per_month_working_days=20
+        one_month=$(($wage_hrs_per_day*$per_month_working_days*$random))
+        echo "One month emp salary = $one_month";
+        ;;
 0)
         part_time_working_hrs=4
         wage_hrs=20
