@@ -27,6 +27,12 @@ case $random in
         per_month_working_days=20
         one_month=$(($wage_hrs_per_day*$per_month_working_days*$random))
         echo "One month emp salary = $one_month";
+
+        for ((d=1; d<=20; d++))
+        do
+        per_day_salary=$(($d*20))
+        echo "per_day_salary : $per_day_salary"
+        done
         ;;
 0)
         part_time_working_hrs=4
