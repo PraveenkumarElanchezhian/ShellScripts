@@ -31,7 +31,7 @@ case $random in
         for ((d=1; d<=20; d++))
         do
         per_day_salary=$(($d*20))
-        echo "per_day_salary : $per_day_salary"
+        echo "per_day_salary * $d : $per_day_salary"
         done
         ;;
 0)
@@ -49,4 +49,7 @@ esac
 
 }
 empworkhrs;
+
+
+
 
