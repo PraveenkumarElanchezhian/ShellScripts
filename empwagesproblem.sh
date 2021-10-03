@@ -9,6 +9,8 @@ else
 echo "If else emp absent"
 fi
 
+function empworkhrs() {
+
 case $random in
 1)
         part_time_working_hrs=4
@@ -38,4 +40,7 @@ case $random in
         echo "If emp working full time = $full_time wages";
         ;;
 esac
+
+}
+empworkhrs;
 
